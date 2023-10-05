@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Server"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="153*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Massage Client" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="tb_client" HorizontalAlignment="Left" Height="300" Margin="15,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" Grid.Column="1"/>
     </Grid>
 </Window>
